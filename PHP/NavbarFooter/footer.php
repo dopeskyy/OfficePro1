@@ -1,0 +1,74 @@
+<footer>
+
+    <div class="left-footer-content">
+        <h3 style="font-size: 20px; padding: 0;">Support</h3>
+        <br>
+        <div class="footer-links">
+            <a onclick="window.location.href = '../../HTML/pages/contactus.html';">Contact Us</a>
+            <br><br>
+            <a onclick="window.location.href = '../pages/aboutus.php';">About Us</a>
+            <br><br>
+            <a onclick="window.location.href = '../pages/faq.php';">FAQ</a>
+            <br><br>
+            <a onclick="window.location.href = '../pages/Home.php';">Home</a>
+        </div>
+
+    </div>
+
+    <div class="footer-content">
+        <h3 style="font-size: 20px; padding: 0;">Store Information</h3>
+            <p style="padding: 0;" id="footer-text">
+                Monday - 9 - 10 PM
+                <br>
+                Tuesday - 9 - 10 PM
+                <br>
+                Wednesday - 9-10 PM
+                <br>
+                Thursday - 9-10 PM
+                <br>
+                Friday - 9-10 PM
+                <br>
+                Saturday - 9-10 PM
+                <br>
+                Sunday - 9-7 PM
+            </p>
+    </div>
+
+    <div class="links-footer-content">
+        <h3 style="font-size: 20px;">Quick Links</h3>
+        <br>
+        <div class="footer-links">
+            <a onclick="window.location.href = '../../HTML/pages/shop.html';">Shop</a>
+            <br><br>
+            <a onclick="window.location.href = '../handlers/loginhandler.php';">Login</a>
+            <br><br>
+            <a onclick="window.location.href = '../pages/Home.php';">Home</a>
+        </div>
+
+
+    </div>
+
+    <div class="news-footer-content">
+        <h3 style="font-size: 20px; padding-top: 10px;">Newsletter</h3>
+
+        <p id="news-text">
+            Enter your email to get the very latest - news, promotions, and more from OfficePro Supplies. You can
+            unsubscribe
+            at any time.
+        </p>
+
+        <div class="email-row">
+            <label for="email"></label>
+            <input type="text" id="email" name="email" size="35" placeholder="test@gmail.com"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Enter your email" required>
+            <input type="submit" id="join" name="join" value="Join">
+
+        </div>
+        <br>
+
+
+</footer>
+
+        <div class="copyright">
+            <p> Disclaimer this is a prototype website for educational purposes.</p>
+        </div>

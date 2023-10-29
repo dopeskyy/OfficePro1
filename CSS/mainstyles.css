@@ -1,0 +1,261 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+body {
+	background-color: #fafafa;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding:0;
+	margin:0;
+
+}
+
+/*footer */
+footer {
+
+	display: flex;
+	border: 1px solid black;
+	width: 100%;
+}
+
+/*aline the four diffrent groups */
+.left-footer-content,
+.footer-content,
+.links-footer-content,
+.new-footer-content {
+	flex-basis: 25%;
+	padding: 10px;
+}
+
+/* footer headers  */
+h3 {
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+	
+.footer-links{
+	cursor: pointer;
+}
+
+/* email newsletters  */
+.email-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+ #news-text{
+	width: 45%;
+ }
+
+/*join button */
+#join {
+	width: 20%;
+	padding: 5px 10px;
+	margin: 8px 0;
+	border: 1px solid black;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/*copyright */
+.copyright {
+    border: 1px solid;
+    color: black;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* about us box styling */
+.about-box {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	width: 400px;
+	display: inline-block; 
+    align-items: center; 
+    text-align: center; 
+}
+
+ /* image size  */
+ .about-box img {
+	width: 300px;
+	height: 300px;
+}
+.faq-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+ 
+}
+
+ /* FAQ accordion */
+ details {
+	cursor: pointer;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	max-width: 500px;
+	width: 100%
+}
+
+summary {
+	outline: none;
+}
+
+/*contact us box*/
+#contact-content {
+	Border: 1px solid #ccc;
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*textbox in the contact us box*/
+#textbox {
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	padding: 6px 6px;
+}
+
+.caseNumber-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px; /* Use min-height for full viewport height */
+    text-align: center;
+}
+
+/* Style for the form elements */
+.caseNumber-message {
+    font-size: 18px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    max-width: 500px;
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* disclaimer content container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	min-height: 800px;
+}
+
+/* disclaimer text */
+.wrapper-dis {
+    text-align: center;
+}
+
+.disclaimer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/*navigation style*/
+/* Style the navigation bar container */
+#nav {
+	background-color: #333; /* Set the background color to a dark color */
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+/* Style the navigation links */
+#nav a {
+	color: #fff; /* Set the text color to white */
+	text-decoration: none;
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+/* Style the logo image */
+#nav img {
+	margin-right: 20px;
+}
+
+/* Style the "Sign In / Register" link */
+#sr {
+	background-color: #4CAF50; /* Set a different background color for the sign-in link */
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* Style the cart icon */
+#icon3 {
+	margin-left: auto; /* Push the cart icon to the right side */
+}
+
+
+/*footer style*/
+#footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#footer h3 {
+	font-size: 20px;
+}
+
+#footer a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	margin: 5px 0;
+}
+
+#footer p {
+	margin: 0;
+}
+
+.email-row {
+	display: flex;
+	align-items: center;
+}
+
+#footer-text {
+	font-size: 14px;
+}
+
+/* Additional styling for your "Disclaimer" */
+.copyright {
+	text-align: center;
+	background-color: #333;
+	padding: 10px;
+	color: #fff;
+}
+
+/* Add this CSS to ensure that content doesn't overlap the footer */
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	padding-bottom: 100px; /* Adjust this value as needed to prevent overlap with the footer */
+}
+.content {
+	flex: 1; /* This makes the content take up the available space */
+}

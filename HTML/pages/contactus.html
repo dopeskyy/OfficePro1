@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+            <title>Contact Us </title>
+
+            <head>
+                
+                <link rel="stylesheet" href="../CSS/mainstyles.css" />
+
+            </head>
+
+        <script>
+            // Fetch and insert the nav.html content
+            fetch('../NavbarFooter/nav.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('nav-placeholder').innerHTML = html;
+                });
+
+                // Fetch and insert the footer.html content
+            fetch('../NavbarFooter/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('footer-placeholder').innerHTML = html;
+                });
+        </script>
+
+            <body>
+                <div id="nav-placeholder"></div>
+
+                <br><br>
+
+                <div id="contact-content">
+                    <h2 style="text-align: center;"> Contact US </h2>
+                        <form action="../../PHP/handlers/contacthandler.php" method="POST">
+                            <br>
+                            <div class="contact-row">
+                                <label for="FirstName">First Name:</label>
+                                <input type="text" id="FirstName" name="FirstName" size="25" placeholder="John"
+                                    title="Enter your first name" required><br><br>
+                            </div>
+
+                            <div class="contact-row">
+                                <label for="LastName">Last Name:</label>
+                                <input type="text" id="LastName" name="LastName" size="25" placeholder="Last"
+                                    title="Enter your last name" required><br><br>
+                            </div>
+
+
+                            <div class="contact-row">
+                                <label for="UserEmail">Email:</label>
+                                <input type="text" id="UserEmail" name="UserEmail" size="35" placeholder="test@gmail.com"
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Enter your email" required><br><br>
+                            </div>
+
+                            <br>
+
+                            <div class="contact-row">
+                                <label for="textbox">Message:</label><br>
+                                <textarea id="textbox" name="textbox" size="500" maxlength="1500"
+                                    placeholder="Enter your qustions or concerns here. We will do our best to respond to you as soon as possilbe.The characters limit is 1500."
+                                    title="Enter your Message" required></textarea>
+
+                            </div>
+
+                            <br><br>
+
+                            <input type="submit" id="submit" name="Submit" value="Submit">
+
+                            <br><br><br>
+
+                        </form>
+                </div>
+                        <br><br>
+            </body>
+            
+        <div id="footer-placeholder"></div>
+
+    </html>
